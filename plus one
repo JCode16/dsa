@@ -1,0 +1,9 @@
+logic:
+- convert array to integer
+- + 1 and convert back to array
+
+class Solution(object):
+    def plusOne(self, digits):
+        integer = int(''.join(map(str, digits))) + 1
+        array = [int(digit) for digit in str(integer)]
+        return array
