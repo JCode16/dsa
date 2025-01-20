@@ -1,4 +1,4 @@
-logic:
+logic 1:
 - convert array to integer
 - + 1 and convert back to array
 
@@ -7,3 +7,9 @@ class Solution(object):
         integer = int(''.join(map(str, digits))) + 1
         array = [int(digit) for digit in str(integer)]
         return array
+
+logic 2:
+- traverse in the reverse direction
+- if not 9 then + 1
+- if 9 make it 0
+after traverse add [1]
